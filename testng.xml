@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="1" name="Test">
+  <parameter name="username" value="Admin"></parameter>
+   <parameter name="password" value="admin123"></parameter>
+    <classes>
+      <class name="OraHRM_Assign.Login"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  <test thread-count="1" name="Test1">
+  <parameter name="username" value="Ruchi"></parameter>
+   <parameter name="password" value="ruchi123"></parameter>
+    <classes>
+      <class name="OraHRM_Assign.Login"/>
+    </classes>
+     </test> <!-- Test -->
+    
+    <test thread-count="1" name="Test2">
+ 
+    <classes>
+      <class name="OraHRM_Assign.Login_Assertions"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
